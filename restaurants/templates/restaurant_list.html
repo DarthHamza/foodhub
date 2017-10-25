@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>List</title>
+</head>
+<body>
+	{% for restaurant in objects %}
+	<ul>
+        <li>{{restaurant.name}}</li>
+        <li>{{restaurant.description}}</li>
+        <li>{{restaurant.opening_time}}</li>
+        <li>{{restaurant.closing_time}}</li>
+    </ul>
+    {% endfor %}
+</body>
+</html>
