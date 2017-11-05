@@ -9,5 +9,8 @@
         {{restaurant.description}} <br>
         {{restaurant.opening_time}} <br>
         {{restaurant.closing_time}} <br>
+		{% if restaurant.logo %}
+		<li><img src="{{restaurant.logo.url}}" alt=""></li>
+		{% endif %}
 </body>
 </html>
